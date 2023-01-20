@@ -1,0 +1,36 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.no-select {
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  color: yellow;
+}
+
+span:hover {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  &:hover {
+    color: yellow;
+  }
+}
