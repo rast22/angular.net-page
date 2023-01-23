@@ -1,0 +1,17 @@
+{
+  "*": {
+    "target": "https://localhost:8010",
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "rejectUnauthorzied": false,
+    "secure": true,
+    "strictSSL": false,
+    "withCredentials": false
+  },
+  "/uploads/*": {
+    "target": "http://localhost:5500",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

@@ -13,6 +13,10 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import { BaseComponent } from './components/base/base.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { ProductCardComponent } from './components/product-components/product-card/product-card.component';
+import {MatCardModule} from "@angular/material/card";
+import {CurrencyPipe} from "@angular/common";
+import { ProductPageComponent } from './components/product-components/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -20,18 +24,21 @@ import { MainPageComponent } from './components/main-page/main-page.component';
     FooterComponent,
     HeaderComponent,
     BaseComponent,
-    MainPageComponent
+    MainPageComponent,
+    ProductCardComponent,
+    ProductPageComponent
   ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonToggleModule,
-    AppRoutingModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-  ],
+    imports: [
+        HttpClientModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonToggleModule,
+        AppRoutingModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatCardModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

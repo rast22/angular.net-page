@@ -17,6 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./node_modules"
+              ]
+            },
             "outputPath": "dist/products-page",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -72,7 +77,8 @@
               "browserTarget": "products-page:build:production"
             },
             "development": {
-              "browserTarget": "products-page:build:development"
+              "browserTarget": "products-page:build:development",
+              "ssl": false
             }
           },
           "defaultConfiguration": "development"
