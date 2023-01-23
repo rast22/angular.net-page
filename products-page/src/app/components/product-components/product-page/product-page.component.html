@@ -1,0 +1,15 @@
+<div *ngIf="isLoad">
+  Loading...
+</div>
+
+<div *ngIf="!isLoad">
+  <div class="product-page">
+    <img class="product-image" [src]="product.product_image" alt="Image of a Product">
+    <div class="product-info">
+      <div class="product-title">{{product.product_name}}</div>
+      <div class="product-price">{{product.product_price|currency:'EUR'}}</div>
+      <div class="product-type">Type: {{product.product_type?.type_name}}</div>
+      <div class="product-description">{{product.product_description}}</div>
+    </div>
+  </div>
+</div>

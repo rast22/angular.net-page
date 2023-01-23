@@ -1,0 +1,18 @@
+<div class="card-container">
+  <div class="product-card">
+    <a href="product/{{product.product_id}}">
+      <img class="product-image" [src]="image" alt="Image of a Product">
+    </a>
+    <a  href="product/{{product.product_id}}">
+      <div class="product-info">
+        <div class="product-title">{{product.product_name}}</div>
+        <div class="product-price">{{product.product_price| currency:'EUR'}}</div>
+        <div class="product-description">{{(product.product_description.length>15)? (product.product_description | slice:0:15)+'...':(product.product_description) }}</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+
