@@ -4,14 +4,23 @@ The test task for Positiva rešitve d.o.o.
 
 To start application:
 Server:
-  Start from IDE
+
+    Start from IDE
 
 Client:
+
   go to the products-page folder:
-    cd products-page
+
+    `cd products-page`
+
   then type:
-    yarn install
+
+    `yarn install`
+
   then type:
-    npm run start
-  if unseccesfull
-    ng serve --ssl
+
+    `npm run start`
+
+  if unsuccessful:
+
+    `ng serve --ssl`
